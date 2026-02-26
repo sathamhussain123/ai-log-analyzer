@@ -229,7 +229,7 @@ export default function Home() {
                       <div className={`severity-badge ${getSeverityClass(result.severity || "Medium")}`}>{result.severity || "Medium"}</div>
                     </div>
                     <div className="metric-card" style={{ "--card-accent": "var(--gradient-cyan-blue)" } as React.CSSProperties}>
-                      <div className="metric-label"><Activity size={10} /> Confidence</div>
+                      <div className="metric-label"><Activity size={10} /> AI Confidence</div>
                       <div className="confidence-pct">{result.confidence || 0}%</div>
                       <div className="confidence-bar-wrap">
                         <div className="confidence-bar" style={{ width: `${result.confidence || 0}%` }} />
